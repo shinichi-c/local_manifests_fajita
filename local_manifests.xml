@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+<!-- Generated using sounddrill31/actions_generate_local_manifests -->
+
+    <!-- Remotes -->
+    <remote name="Terminator-J" fetch="https://github.com/Terminator-J" clone-depth="1" />
+    <remote name="Linux-on-droid" fetch="https://github.com/Linux-on-droid" clone-depth="1" />
+    <remote name="TheMuppets" fetch="https://github.com/TheMuppets" clone-depth="1" />
+    <remote name="shinichi-c" fetch="https://github.com/shinichi-c" clone-depth="1" />
+
+    <!-- Removals -->
+    <remove-project name="device_lineage_sepolicy" />
+    <remove-project name="LineageOS/android_hardware_qcom_audio" />
+    <remove-project name="frameworks_native" />
+    <remove-project name="LineageOS/android_hardware_qcom_display" />
+    <remove-project name="LineageOS/android_device_qcom_sepolicy_vndr" />
+    <remove-project name="LineageOS/android_hardware_qcom_media" />
+    <remove-project name="frameworks_base" />
+
+    <!-- Repos -->
+    <!-- Device -->
+    <project path="device/oneplus/fajita" name="android_device_oneplus_fajita" remote="shinichi-c" revision="lineage-21" />
+    <project path="device/qcom/sepolicy_vndr/legacy-um" name="android_device_qcom_sepolicy_vndr" remote="shinichi-c" revision="lineage-21.0-legacy-um" />
+    <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="shinichi-c" revision="fourteen" />
+
+    <!-- Device - Common -->
+    <project path="device/oneplus/sdm845-common" name="android_device_oneplus_sdm845-common" remote="shinichi-c" revision="pxl_os" />
+
+    <!-- Kernel -->
+    <project path="kernel/oneplus/sdm845" name="crdroid_kernel_oneplus_sdm845" remote="Terminator-J" revision="14.0-4.19-test2" />
+
+    <!-- Vendor -->
+    <project path="vendor/lindroid" name="vendor_lindroid" remote="Linux-on-droid" />
+    <project path="vendor/oneplus/fajita" name="proprietary_vendor_oneplus_fajita" remote="TheMuppets" revision="lineage-21" />
+
+    <!-- Vendor - Common -->
+    <project path="vendor/oneplus/sdm845-common" name="proprietary_vendor_oneplus_sdm845-common" remote="shinichi-c" revision="lineage-21-4.19" />
+
+    <!-- Hardware -->
+    <project path="hardware/qcom-caf/sdm845/media" name="media" remote="shinichi-c" />
+    <project path="hardware/qcom-caf/sdm845/audio" name="audio" remote="shinichi-c" />
+    <project path="hardware/qcom-caf/sdm845/display" name="display" remote="shinichi-c" />
+    <project path="hardware/oneplus" name="android_hardware_oneplus" remote="shinichi-c" />
+
+    <!-- Other Repos -->
+    <project path="external/libhybris" name="libhybris" remote="Linux-on-droid" revision="staging/lindroid-21" />
+    <project path="frameworks/native" name="frameworks_native_pxl" remote="shinichi-c" />
+    <project path="external/lxc" name="external_lxc" remote="Linux-on-droid" />
+    <project path="frameworks/base" name="frameworks_base" remote="shinichi-c" revision="fourteen" />
+
+</manifest>
